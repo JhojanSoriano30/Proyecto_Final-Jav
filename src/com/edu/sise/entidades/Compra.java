@@ -81,5 +81,5 @@ Integer id_producto;
     public String toString() {
         return id_compra + " - "+ cliente;
     }
-    
+    //prueba
 }
