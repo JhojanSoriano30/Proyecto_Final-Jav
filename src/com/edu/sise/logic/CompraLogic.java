@@ -84,7 +84,7 @@ modelo.addColumn("ID_COMPRA");
      modelo.addColumn("PRODUCTO");
    modelo.addColumn("CATEGORÍA");
    modelo.addColumn("PRECIO");
-   modelo.addColumn("ID_PRODUCTO");
+  // modelo.addColumn("ID_PRODUCTO");
    modelo.addColumn("CANTIDAD");
   
    for(Compra obj : lista){
@@ -95,7 +95,7 @@ modelo.addColumn("ID_COMPRA");
              obj.getProducto(),
            obj.getCategoria(),
            obj.getPrecio(),
-           obj.getId_producto(),
+          // obj.getId_producto(),
            obj.getCantidad()
        
        
