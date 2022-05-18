@@ -65,10 +65,10 @@ public class ifrmCompra extends javax.swing.JInternalFrame {
         jPanel1 = new javax.swing.JPanel();
         btnListar = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
-        btnGuard = new javax.swing.JButton();
-        btnElim = new javax.swing.JButton();
         btnModi = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        btnGua = new javax.swing.JButton();
+        btnElim = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tbLista = new javax.swing.JTable();
         jTextField1 = new javax.swing.JTextField();
@@ -80,14 +80,14 @@ public class ifrmCompra extends javax.swing.JInternalFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setText("ID");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, -1, -1));
 
         txtClie.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtClieActionPerformed(evt);
             }
         });
-        jPanel2.add(txtClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 80, 30));
+        jPanel2.add(txtClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 80, 30));
 
         jLabel4.setText("CLIENTE");
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, -1));
@@ -100,12 +100,12 @@ public class ifrmCompra extends javax.swing.JInternalFrame {
                 txtIdActionPerformed(evt);
             }
         });
-        jPanel2.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 69, -1));
+        jPanel2.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 69, 30));
 
         jLabel1.setText("PRODUCTOS");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, -1, -1));
 
-        jPanel2.add(cboProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, 160, 30));
+        jPanel2.add(cboProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, 180, 30));
 
         jLabel5.setText("CATEGORÍA");
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, -1));
@@ -114,20 +114,20 @@ public class ifrmCompra extends javax.swing.JInternalFrame {
         jPanel2.add(txtCate, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 140, 80, 30));
 
         jLabel6.setText("PRECIO");
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 110, -1, -1));
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, -1, -1));
 
         txtPrec.setEnabled(false);
-        jPanel2.add(txtPrec, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 100, 80, 30));
-        jPanel2.add(txtCant, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 160, 80, 30));
+        jPanel2.add(txtPrec, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, 80, 30));
+        jPanel2.add(txtCant, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 160, 80, 30));
 
         jLabel8.setText("CANTIDAD");
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 170, -1, -1));
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 170, -1, -1));
 
         jLabel9.setText("ID PRODUCTO");
-        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 40, -1, -1));
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 40, -1, -1));
 
         txtIdProd.setEnabled(false);
-        jPanel2.add(txtIdProd, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 80, 30));
+        jPanel2.add(txtIdProd, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 30, 80, 30));
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Opciones"));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -138,7 +138,7 @@ public class ifrmCompra extends javax.swing.JInternalFrame {
                 btnListarActionPerformed(evt);
             }
         });
-        jPanel1.add(btnListar, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 169, 141, 55));
+        jPanel1.add(btnListar, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 169, 130, 55));
 
         btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/edu/sise/gui/resources/salirr.png"))); // NOI18N
         btnSalir.setText("Salir");
@@ -147,24 +147,7 @@ public class ifrmCompra extends javax.swing.JInternalFrame {
                 btnSalirActionPerformed(evt);
             }
         });
-        jPanel1.add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 91, 141, 47));
-
-        btnGuard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/edu/sise/gui/resources/guardar.png"))); // NOI18N
-        btnGuard.setText("Guardar");
-        btnGuard.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGuardActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnGuard, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 27, 141, 46));
-
-        btnElim.setText("Eliminar");
-        btnElim.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnElimActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnElim, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 141, 57));
+        jPanel1.add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 130, 60));
 
         btnModi.setText("Modificar");
         btnModi.addActionListener(new java.awt.event.ActionListener() {
@@ -172,10 +155,26 @@ public class ifrmCompra extends javax.swing.JInternalFrame {
                 btnModiActionPerformed(evt);
             }
         });
-        jPanel1.add(btnModi, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 344, 141, 57));
+        jPanel1.add(btnModi, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, 130, 57));
 
         jButton1.setText("IMPRIMIR");
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 439, 141, 52));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 430, 130, 52));
+
+        btnGua.setText("Guardar");
+        btnGua.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnGua, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 120, 50));
+
+        btnElim.setText("Eliminar");
+        btnElim.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnElimActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnElim, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 120, 50));
 
         tbLista.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -208,48 +207,52 @@ public class ifrmCompra extends javax.swing.JInternalFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 564, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(53, 53, 53)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 386, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(32, 32, 32)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 510, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 564, Short.MAX_VALUE)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(74, 74, 74)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(txtTot))
-                        .addGap(71, 71, 71))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(28, 28, 28))))
+                            .addComponent(txtTot)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(35, 35, 35))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(jLabel2)
-                .addGap(18, 18, 18)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 531, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
-                .addComponent(jLabel7)
-                .addGap(18, 18, 18)
-                .addComponent(txtTot, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(jLabel2)
+                        .addGap(18, 18, 18)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 531, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(52, 52, 52)
+                        .addComponent(jLabel7)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtTot, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(52, Short.MAX_VALUE))
         );
 
         pack();
@@ -272,57 +275,18 @@ public class ifrmCompra extends javax.swing.JInternalFrame {
         this.dispose();
     }//GEN-LAST:event_btnSalirActionPerformed
 
-    private void btnGuardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardActionPerformed
-        Compra o = new Compra(
-          Integer.parseInt((txtId.getText().isEmpty())?"-1":txtId.getText()),
-        txtClie.getText(),
-        txtCate.getText(),
-   txtPrec.getText(),
-   //txtIdProd.getText(),
-                Integer.parseInt(txtCant.getText()),
-((Productos)cboProductos.getSelectedItem()).getId_prod());
-        
-        
-        
-        boolean rpta = logica.agegarCompra(o);
-        if (rpta){
-            JOptionPane.showMessageDialog(this, "Se registro correctamente ");
-        }
-        else{
-            JOptionPane.showMessageDialog(this, "No se pudo registrar correctamente ");
-        }
-
-        logica.imprimir(tbLista);
-    }//GEN-LAST:event_btnGuardActionPerformed
-
-    private void btnElimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnElimActionPerformed
-
-        int respuesta = JOptionPane.showConfirmDialog(this, "¿Desea realmente eliminar el registro?", "SISTEMAS", JOptionPane.YES_NO_OPTION);
-
-        if(respuesta == JOptionPane.YES_OPTION){
-            int id_depa = Integer.parseInt(txtId.getText());
-            boolean rpta = logica.eliminarCompra(id_depa);
-            if(rpta){
-                JOptionPane.showMessageDialog(this, "Se elimino correctamente");
-            } else {
-                JOptionPane.showMessageDialog(this, "No se pudo elimino");
-            }
-        }
-        logica.imprimir(tbLista);
-
-    }//GEN-LAST:event_btnElimActionPerformed
-
     private void btnModiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModiActionPerformed
 
-        Compra o = new Compra(
-            Integer.parseInt((txtId.getText().isEmpty())?"-1":txtId.getText()),
+      Compra o = new Compra(
+          Integer.parseInt((txtId.getText().isEmpty())?"-1":txtId.getText()),
+                
         txtClie.getText(),
         txtCate.getText(),
-   txtPrec.getText(),
+        txtIdProd.getText(),
+   Double.parseDouble(txtPrec.getText()),
    //txtIdProd.getText(),
                 Integer.parseInt(txtCant.getText()),
 ((Productos)cboProductos.getSelectedItem()).getId_prod());
-        
         
         boolean rpta = logica.modificarCompra(o);
         if (rpta){
@@ -367,10 +331,56 @@ cant=Integer.parseInt( tbLista.getValueAt(fila, x++) +"");
 logica.imprimir(tbLista);
     }//GEN-LAST:event_tbListaMouseClicked
 
+    private void btnGuaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuaActionPerformed
+
+Compra o = new Compra(
+          Integer.parseInt((txtId.getText().isEmpty())?"-1":txtId.getText()),
+                
+        txtClie.getText(),
+        txtCate.getText(),
+        txtIdProd.getText(),
+   Double.parseDouble(txtPrec.getText()),
+   //txtIdProd.getText(),
+                Integer.parseInt(txtCant.getText()),
+((Productos)cboProductos.getSelectedItem()).getId_prod());
+        
+        
+        
+        boolean rpta = logica.agegarCompra(o);
+        if (rpta){
+            JOptionPane.showMessageDialog(this, "Se registro correctamente ");
+        }
+        else{
+            JOptionPane.showMessageDialog(this, "No se pudo registrar correctamente ");
+        }
+
+        logica.imprimir(tbLista);
+
+    }//GEN-LAST:event_btnGuaActionPerformed
+
+    private void btnElimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnElimActionPerformed
+       
+int respuesta = JOptionPane.showConfirmDialog(this, "¿Desea realmente eliminar la compra?", "SISTEMAS", JOptionPane.YES_NO_OPTION);
+
+        if(respuesta == JOptionPane.YES_OPTION){
+            int id_depa = Integer.parseInt(txtId.getText());
+            boolean rpta = logica.eliminarCompra(id_depa);
+            if(rpta){
+                JOptionPane.showMessageDialog(this, "Se elimino correctamente");
+            } else {
+                JOptionPane.showMessageDialog(this, "No se pudo elimino");
+            }
+        }
+        logica.imprimir(tbLista);
+        
+
+        
+    }//GEN-LAST:event_btnElimActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnElim;
-    private javax.swing.JButton btnGuard;
+    private javax.swing.JButton btnGua;
     private javax.swing.JButton btnListar;
     private javax.swing.JButton btnModi;
     private javax.swing.JButton btnSalir;
